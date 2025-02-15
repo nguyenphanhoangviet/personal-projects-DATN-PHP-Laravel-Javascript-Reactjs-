@@ -1,0 +1,46 @@
+.categories-wrap {
+  position: relative; /* Để định vị phần tử con bên trong */
+}
+
+.categories-content {
+  position: absolute; /* Để phần này phủ lên ảnh */
+  bottom: 0; /* Đặt nó ở dưới cùng của div cha */
+  left: 0; /* Lấp đầy chiều ngang */
+  right: 0; /* Lấp đầy chiều ngang */
+  text-align: center;
+  // background-color: rgba(211, 211, 211, 0.8); /* Xám nhạt với độ mờ */
+  background-color: rgba(219, 248, 207, 0.8); /* Xanh nhạt với độ mờ */
+  color: #333; /* Màu chữ */
+  padding: 10px;
+  opacity: 0; /* Ẩn đi ban đầu */
+  visibility: hidden; /* Ẩn khi chưa hover */
+  transform: translateY(10px); /* Hiệu ứng trượt lên */
+  transition: all 0.3s ease; /* Hiệu ứng mượt */
+  height: 100%; /* Chiều cao */
+  display: flex; /* Dùng Flexbox */
+  flex-direction: column; /* Đặt các phần tử con theo chiều dọc */
+  justify-content: center; /* Căn giữa theo chiều dọc */
+  align-items: center; /* Căn giữa theo chiều ngang */
+  text-transform: uppercase;
+}
+
+.categories-wrap:hover .categories-content {
+  opacity: 1; /* Hiển thị khi hover */
+  visibility: visible; /* Hiển thị */
+  transform: translateY(0); /* Trở về vị trí ban đầu */
+}
+
+.categories-wrap .categories-content h3 {
+  margin: 0; /* Loại bỏ margin mặc định của h3 */
+  font-size: 16px; /* Đặt kích thước chữ cho h3 */
+  font-weight: bold; /* Đặt kiểu chữ đậm */
+
+}
+
+.categories-wrap .categories-content h3 a:hover {
+  color: #000 !important; /* Màu chữ khi hover */
+}
+
+.categoriesArea1 {
+  padding: 30px 0; /* Khoảng cách giữa các phần tử */
+}

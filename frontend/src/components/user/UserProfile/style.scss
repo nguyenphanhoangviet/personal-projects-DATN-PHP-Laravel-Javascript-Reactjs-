@@ -1,0 +1,20 @@
+
+.myaccount-content .account-details-form .account-info-btn button {
+    background-color: #27C77C !important;
+}
+.myaccount-tab-menu a:hover, .myaccount-tab-menu a.active {
+    background-color: #27C77C !important;
+}
+.img-order-userinfo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.name-order-userinfo {
+    max-width: 400px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+  }
+  

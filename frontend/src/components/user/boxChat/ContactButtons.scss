@@ -1,0 +1,108 @@
+/* ContactButtons.css */
+
+#gom-all-in-one {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.button-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.phone-vr {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+
+
+.phone-vr-img-circle {
+    position: relative;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.phone-vr-img-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.phone-vr-img-circle img:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Specific styles for each button icon */
+#fanpage-vr .phone-vr-img-circle {
+    background: linear-gradient(145deg, #3b5998, #8b9dc3); /* Facebook gradient */
+}
+
+#zalo-vr .phone-vr-img-circle {
+    background: linear-gradient(145deg, #25d366, #0f8a4d); /* Zalo gradient */
+}
+
+#phone-vr .phone-vr-img-circle {
+    background: linear-gradient(145deg, #27C77C, #128c7e); /* Phone gradient */
+}
+
+/* Hover effect on buttons */
+.button-contact:hover {
+    transform: translateY(-5px);
+}
+
+.phone-vr-img-circle img {
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+
+// 
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #27C77C; /* Màu nền của nút */
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hiển thị nút khi cuộn xuống */
+  .scroll-to-top.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+  
+  /* Hiệu ứng hover */
+  .scroll-to-top:hover {
+    background-color: #219653; /* Màu nền khi hover */
+    transform: scale(1.1);
+  }

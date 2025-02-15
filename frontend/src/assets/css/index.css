@@ -1,0 +1,47 @@
+                                                                                                                        
+.hidden {
+    display: none;
+  }
+  
+i {
+    cursor: pointer;
+}
+
+.search-active.active i {
+    transform: translateX(-170px); /* Di chuyển icon tìm kiếm sang trái khi nhấn */
+    transition: transform 0.3s;
+  }
+  
+  .search-input-wrapper {
+    position: relative;
+  }
+  
+  .search-input {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-results {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: white;
+    border: 1px solid #ccc;
+    position: absolute;
+    left: -150px; /* Căn chỉnh kết quả tìm kiếm bên dưới input */
+    top: 35px;
+    width: 200px;
+    z-index: 10;
+  }
+  
+  .search-results li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  .search-results li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  

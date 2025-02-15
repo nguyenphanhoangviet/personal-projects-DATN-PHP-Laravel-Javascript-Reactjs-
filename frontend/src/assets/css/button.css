@@ -1,0 +1,28 @@
+.product-quality {
+    display: flex; /* Sắp xếp các phần tử theo hàng */
+    align-items: center; /* Căn giữa theo chiều dọc */
+  }
+  
+  .increase-icon,
+  .decrease-icon {
+    cursor: pointer; /* Con trỏ chuột khi di chuột qua */
+    font-size: 24px; /* Kích thước biểu tượng */
+    color: #007bff; /* Màu sắc cho biểu tượng */
+    transition: color 0.3s; /* Hiệu ứng chuyển màu */
+  }
+  
+  .increase-icon:hover,
+  .decrease-icon:hover {
+    color: #0056b3; /* Màu sắc khi hover */
+  }
+  
+  .cart-plus-minus-box {
+    width: 50px; /* Đặt chiều rộng cho input số lượng */
+    height: 36px; /* Đặt chiều cao cho input số lượng */
+    text-align: center; /* Căn giữa nội dung trong input */
+    border: 1px solid #ccc; /* Đặt viền cho input */
+    border-radius: 4px; /* Bo góc */
+    margin: 0 10px; /* Khoảng cách giữa input và các biểu tượng */
+    font-size: 16px; /* Kích thước chữ trong input */
+  }
+  
